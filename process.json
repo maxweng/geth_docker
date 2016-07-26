@@ -1,0 +1,26 @@
+[
+  {
+    "name"              : "geth",
+    "script"            : "start_geth.sh",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "error_file"        : "logs/geth.log",    
+    "out_file"          : "logs/geth.log",
+    "combine_logs"      : true,
+    "watch"             : false,
+    "max_restarts"      : 1,
+    "interpreter"       : "ash",
+    "exec_mode"         : "fork_mode"
+  },
+  {
+    "name"              : "bootnode",
+    "script"            : "start_bootnode.sh",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "error_file"        : "logs/bootnode.log",        
+    "out_file"          : "logs/bootnode.log",
+    "combine_logs"      : true,    
+    "watch"             : false,
+    "max_restarts"      : 1,
+    "interpreter"       : "ash",
+    "exec_mode"         : "fork_mode"
+  }
+]
